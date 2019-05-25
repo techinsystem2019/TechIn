@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="WB DataDic" />
+    <meta name="description" content="mydb Data Dictionary." />
+    <title>mydb Data Dictionary</title>
+    <style type="text/css">
+    table{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    abbr{
+        cursor: help;
+    }
+    table, td, th{
+        border-style: solid;
+        border-width: 1px;
+    }
+    table caption{
+        font-size: 120%;
+        font-weight: bold;
+    }
+    caption{
+        color: black;
+    }
+    td, th{
+        border-color: silver;
+    }
+    tr:hover{
+        color: #333;
+        background-color: #F2F2F2;
+    }
+    th{
+        background-color: silver;
+    }
+    td{
+        color: gray;
+    }
+    ul{
+        font-style: italic;
+    }
+    #title-sect{
+        color: gray;
+        text-align: right;
+    }
+    .proj-desc{
+        text-align: right;
+    }
+    </style>
+</head>
+<body>
+<div id="title-sect">
+<h1>mydb<br> Data Dictionay</h1>
+<p>
+<em>2019-05-25</em>
+</p>
+<p class="proj-desc">
+<em></em>
+</p>
+</div>
+<h2>Alphabetic Index</h2>
+<ul>
+<li><a href='#Bodega'>Bodega</a></li>
+<li><a href='#Categoria'>Categoria</a></li>
+<li><a href='#Inventario'>Inventario</a></li>
+<li><a href='#Marca'>Marca</a></li>
+<li><a href='#Producto'>Producto</a></li>
+<li><a href='#Proveedor'>Proveedor</a></li>
+<li><a href='#Rol'>Rol</a></li>
+<li><a href='#Talla'>Talla</a></li>
+<li><a href='#TipoDocumento'>TipoDocumento</a></li>
+<li><a href='#Usuario'>Usuario</a></li>
+</ul>
+<table id='Bodega'>
+<caption>Bodega</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Column name</th>
+    <th>DataType</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Increment'>AI</abbr></th>
+    <th>Default</th>
+    <th>Comment</th>
+</tr>
+<tr>
+    <td>idBodega</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Bodega</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>TelefonoBodega</td>
+    <td>VARCHAR(10)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>DireccionBodega</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>EstadoBodega</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<table id='Categoria'>
+<caption>Categoria</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Column name</th>
+    <th>DataType</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Increment'>AI</abbr></th>
+    <th>Default</th>
+    <th>Comment</th>
+</tr>
+<tr>
+    <td>idCategoria</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Categoria</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>EstadoCategoria</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<table id='Inventario'>
+<caption>Inventario</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Column name</th>
+    <th>DataType</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Increment'>AI</abbr></th>
+    <th>Default</th>
+    <th>Comment</th>
+</tr>
+<tr>
+    <td>IdInventario</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Producto_idProducto</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Usuario_idUsuario</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Movimiento</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>PrecioUnidad</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Cantidad</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>EstadoInventario</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Marca_idMarca</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Talla_idTalla</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<table id='Marca'>
+<caption>Marca</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Column name</th>
+    <th>DataType</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Increment'>AI</abbr></th>
+    <th>Default</th>
+    <th>Comment</th>
+</tr>
+<tr>
+    <td>idMarca</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Marca</td>
+    <td>VARCHAR(50)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>EstadoMarca</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<table id='Producto'>
+<caption>Producto</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Column name</th>
+    <th>DataType</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Increment'>AI</abbr></th>
+    <th>Default</th>
+    <th>Comment</th>
+</tr>
+<tr>
+    <td>idProducto</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Categoria_idCategoria</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Proveedor_idProveedor</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Producto</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>EstadoProducto</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Bodega_idBodega</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<table id='Proveedor'>
+<caption>Proveedor</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Column name</th>
+    <th>DataType</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Increment'>AI</abbr></th>
+    <th>Default</th>
+    <th>Comment</th>
+</tr>
+<tr>
+    <td>idProveedor</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Proveedor</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>EstadoProveedor</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<table id='Rol'>
+<caption>Rol</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Column name</th>
+    <th>DataType</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Increment'>AI</abbr></th>
+    <th>Default</th>
+    <th>Comment</th>
+</tr>
+<tr>
+    <td>idRol</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Rol</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>EstadoRol</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<table id='Talla'>
+<caption>Talla</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Column name</th>
+    <th>DataType</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Increment'>AI</abbr></th>
+    <th>Default</th>
+    <th>Comment</th>
+</tr>
+<tr>
+    <td>idTalla</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Talla</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>EstadoTalla</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<table id='TipoDocumento'>
+<caption>TipoDocumento</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Column name</th>
+    <th>DataType</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Increment'>AI</abbr></th>
+    <th>Default</th>
+    <th>Comment</th>
+</tr>
+<tr>
+    <td>idTipoDocumento</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>TipoDocumento</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>EstadoTipoDocumento</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<table id='Usuario'>
+<caption>Usuario</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Column name</th>
+    <th>DataType</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Increment'>AI</abbr></th>
+    <th>Default</th>
+    <th>Comment</th>
+</tr>
+<tr>
+    <td>idUsuario</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Rol_idRol</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>TipoDocumento_idTipoDocumento</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>DocumentoUsuario</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>NombreUsuario</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>CorreoUsuario</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>ClaveUsuario</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>TelefonoUsuario</td>
+    <td>VARCHAR(10)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>DireccionUsuario</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>FecNacUsuario</td>
+    <td>DATE</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>EstadoUsuario</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+</table>
+</body>
+</html>
