@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="Proveedores.aspx.cs" Inherits="Tech_In_System.Proveedores" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="Talla.aspx.cs" Inherits="Tech_In_System.Talla" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -20,14 +20,13 @@
                                 <br />
                                 <div class="form-group">
                                     <div class="col-md-8 col-sm-8 col-xs-12 col-md-offset-2 col-sm-offset-2">
-                                        
-                                        <asp:GridView ID="Gvw_Proveedor" runat="server" class="table" AutoGenerateColumns="False" DataKeyNames="IdProveedor" DataSourceID="SqlDataSource1" AllowPaging="True" AllowSorting="True">
-                                            <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+                                        <asp:GridView ID="gvw_Talla" runat="server" AllowPaging="True" class="table" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="IdTalla" DataSourceID="SqlDataSource1">
+                                             <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                                             <Columns>
                                                 <asp:CommandField ShowEditButton="True" />
-                                                <asp:BoundField DataField="IdProveedor" HeaderText="IdProveedor" ReadOnly="True" InsertVisible="False" SortExpression="IdProveedor" Visible="False"></asp:BoundField>
-                                                <asp:BoundField DataField="Proveedor" HeaderText="Proveedor" SortExpression="Proveedor"></asp:BoundField>
-                                                <asp:BoundField DataField="EstadoProveedor" HeaderText="EstadoProveedor" SortExpression="EstadoProveedor"></asp:BoundField>
+                                                <asp:BoundField DataField="IdTalla" HeaderText="IdTalla" InsertVisible="False" ReadOnly="True" SortExpression="IdTalla" Visible="False" />
+                                                <asp:BoundField DataField="Talla" HeaderText="Talla" SortExpression="Talla" />
+                                                <asp:BoundField DataField="EstadoTalla" HeaderText="EstadoTalla" SortExpression="EstadoTalla" />
                                             </Columns>
                                             <EditRowStyle BackColor="#999999" BorderColor="#000"/>
                                             <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
@@ -40,18 +39,18 @@
                                             <SortedDescendingCellStyle BackColor="#FFFDF8" />
                                             <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
                                         </asp:GridView>
-                                        <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:TechInConnectionString %>' SelectCommand="MostrarProveedores" SelectCommandType="StoredProcedure" UpdateCommand="EditarProveedores" UpdateCommandType="StoredProcedure">
+                                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:TechInConnectionString %>" SelectCommand="MostrarTallas" SelectCommandType="StoredProcedure" UpdateCommand="EditarTallas" UpdateCommandType="StoredProcedure">
                                             <UpdateParameters>
-                                                <asp:Parameter Name="proveedor" Type="String"></asp:Parameter>
-                                                <asp:Parameter Name="estadoproveedor" Type="Int32"></asp:Parameter>
-                                                <asp:Parameter Name="idproveedor" Type="Int32"></asp:Parameter>
+                                                <asp:Parameter Name="talla" Type="String" />
+                                                <asp:Parameter Name="estadotalla" Type="Int32" />
+                                                <asp:Parameter Name="idtalla" Type="Int32" />
                                             </UpdateParameters>
                                         </asp:SqlDataSource>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-md-8 col-sm-8 col-xs-12 col-md-offset-2 col-sm-offset-2">
-                                        <asp:button id="nuevo_prov" runat="server" text="Nuevo Proveedor" class="btn btn-primary" OnClick="nuevo_prov_Click" />
+                                        <asp:button id="nueva_talla" runat="server" text="Nueva Talla" class="btn btn-primary" OnClick="nueva_talla_Click" />
                                     </div>
                                 </div>
                             </div>
@@ -62,5 +61,6 @@
         </div>
     </div>
     <!-- fin bodega-->
+
 
 </asp:Content>

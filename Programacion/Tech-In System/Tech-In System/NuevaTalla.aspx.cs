@@ -8,22 +8,22 @@ using CapaNegocio;
 
 namespace Tech_In_System
 {
-    public partial class NuevaBodega : System.Web.UI.Page
+    public partial class NuevaTalla : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void guardar_prod_Click(object sender, EventArgs e)
+        protected void guardar_talla_Click(object sender, EventArgs e)
         {
             try
             {
                 CN_TechIn objetoCN2 = new CN_TechIn();
-                objetoCN2.InsertarBodegas(txtBodega.Text, txtdirBodega.Text, txtTelBodega.Text, "1");
+                objetoCN2.InsertarTallas(txtTalla.Text, "1");
                 //Lbl_Categoria.Text = "Se insertó correctamente";
-                LimpiarBodegas();
-                Response.Redirect("Bodegas.aspx");
+                LimpiarTallas();
+                Response.Redirect("Tallas.aspx");
             }
             catch (Exception)
             {
@@ -31,16 +31,14 @@ namespace Tech_In_System
             }
         }
 
-        private void LimpiarBodegas()
+        public void LimpiarTallas()
         {
-            txtBodega.Text = "";
-            txtdirBodega.Text = "";
-            txtTelBodega.Text = "";
+            txtTalla.Text = "";
         }
 
         protected void volver_prod_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Bodegas.aspx");
+            Response.Redirect("Talla.aspx");
         }
     }
 }

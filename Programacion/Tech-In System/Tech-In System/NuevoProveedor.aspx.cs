@@ -35,5 +35,10 @@ namespace Tech_In_System
         {
             txtProveedor.Text = "";
         }
+
+        protected void volver_prod_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Proveedores.aspx");
+        }
     }
 }

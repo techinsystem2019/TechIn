@@ -45,5 +45,10 @@ namespace CapaNegocio
         {
             objetoCD.InsertarProveedores(proveedor, Convert.ToInt32(estadoproveedor));
         }
+
+        public void InsertarTallas(string talla, string estadotalla)
+        {
+            objetoCD.InsertarProveedores(talla, Convert.ToInt32(estadotalla));
+        }
     }
 }

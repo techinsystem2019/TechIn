@@ -116,5 +116,17 @@ namespace CapaDatos
             comando.Parameters.Clear();
 
         }
+
+        public void InsertarTallas(string talla, int estadotalla)
+        {
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "InsertarTallas";
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@talla", talla);
+            comando.Parameters.AddWithValue("@estadotalla", estadotalla);
+            comando.ExecuteNonQuery();
+            comando.Parameters.Clear();
+
+        }
     }
 }

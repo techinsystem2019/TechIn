@@ -33,7 +33,7 @@
                             <div class="ln_solid"></div>
                             <div class="form-group">
                                 <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3 col-sm-offset-3">
-                                    &nbsp;<asp:Button ID="Button1" runat="server" Text="Volver" class="btn btn-danger" />
+                                    &nbsp;<asp:Button ID="Button1" runat="server" Text="Volver" class="btn btn-danger" OnClick="Button1_Click" />
                                     <asp:Button ID="guardar_prod" runat="server" Text="Guardar" class="btn btn-success" OnClick="guardar_prod_Click" />
                                 </div>
                             </div>
