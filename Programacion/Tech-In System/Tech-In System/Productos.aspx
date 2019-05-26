@@ -21,16 +21,16 @@
                                 <br />
                                 <div class="form-group">
                                     <div class="col-md-8 col-sm-8 col-xs-12 col-md-offset-2 col-sm-offset-2">
-                                        <asp:GridView ID="gvwProducto" runat="server" class="table" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="IdProducto" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333" GridLines="None" OnPageIndexChanging="GridView1_PageIndexChanging">
+                                        <asp:GridView ID="gvwProducto" runat="server" class="table" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="IdProducto" DataSourceID="SqlDataSource1" CellPadding="4" OnPageIndexChanging="GridView1_PageIndexChanging" OnSelectedIndexChanged="gvwProducto_SelectedIndexChanged">
                                             <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                                             <Columns>
-                                                <asp:CommandField ShowEditButton="True">
-                                                <ControlStyle CssClass="btn" />
-                                                </asp:CommandField>
+                                                <asp:CommandField ShowEditButton="True" />
                                                 <asp:BoundField DataField="Categoria" HeaderText="Categoria" SortExpression="Categoria" />
+                                                <asp:BoundField DataField="Bodega" HeaderText="Bodega" SortExpression="Bodega" />
+                                                <asp:BoundField DataField="Proveedor" HeaderText="Proveedor" SortExpression="Proveedor" />
                                                 <asp:BoundField DataField="Producto" HeaderText="Producto" SortExpression="Producto" />
                                                 <asp:BoundField DataField="EstadoProducto" HeaderText="EstadoProducto" SortExpression="EstadoProducto" />
-                                                <asp:BoundField DataField="IdProducto" HeaderText="IdProducto" InsertVisible="False" ReadOnly="True" SortExpression="IdProducto" />
+                                                <asp:BoundField DataField="IdProducto" HeaderText="IdProducto" InsertVisible="False" ReadOnly="True" SortExpression="IdProducto" Visible="False" />
                                             </Columns>
                                             <EditRowStyle BackColor="#999999" BorderColor="#000"/>
                                             <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
@@ -46,6 +46,8 @@
                                         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:TechInConnectionString %>" SelectCommand="MostrarProductos" SelectCommandType="StoredProcedure" UpdateCommand="EditarProductos" UpdateCommandType="StoredProcedure">
                                             <UpdateParameters>
                                                 <asp:Parameter Name="categoria" Type="String" />
+                                                <asp:Parameter Name="bodega" Type="String" />
+                                                <asp:Parameter Name="proveedor" Type="String" />
                                                 <asp:Parameter Name="producto" Type="String" />
                                                 <asp:Parameter Name="estadoproducto" Type="Int32" />
                                                 <asp:Parameter Name="idproducto" Type="Int32" />

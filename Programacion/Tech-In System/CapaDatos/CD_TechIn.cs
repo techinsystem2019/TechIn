@@ -104,5 +104,17 @@ namespace CapaDatos
             comando.Parameters.Clear();
 
         }
+
+        public void InsertarProveedores(string proveedor, int estadoproveedor)
+        {
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "InsertarProveedores";
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@proveedor", proveedor);
+            comando.Parameters.AddWithValue("@estadoproveedor", estadoproveedor);
+            comando.ExecuteNonQuery();
+            comando.Parameters.Clear();
+
+        }
     }
 }

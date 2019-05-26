@@ -230,21 +230,7 @@
                     <!-- sidebar menu: : style can be found in sidebar.less -->
 
                     <ul class="sidebar-menu" data-widget="tree">
-                        <li class="header">MAIN NAVIGATION</li>
-                        <!--
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa-dashboard"></i><span>Inicio</span>
-                                <span class="pull-right-container">
-                                    <i class="fa fa-angle-left pull-right"></i>
-                                </span>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li><a href="../../Inicio.aspx"><i class="fa fa-circle-o"></i>Dashboard v1</a></li>
-                                <li><a href="../../Productos.aspx"><i class="fa fa-circle-o"></i>Dashboard v2</a></li>
-                            </ul>
-                        </li>
-                        -->
+                        <li class="header">MAIN NAVIGATION</li>              
                         <li>
                             <a href="../../Inicio.aspx">
                                 <i class="fa fa-home"></i><span>Inicio</span>
@@ -267,6 +253,11 @@
                             </a>
                         </li>
                         <li>
+                            <a href="../../Proveedores.aspx">
+                                <i class="fa fa-cart-plus"></i><span>Proveedores</span>
+                            </a>
+                        </li>
+                        <li>
                             <a href="../../Usuarios.aspx">
                                 <i class="fa fa-user"></i><span>Usuarios</span>
                                 <span class="pull-right-container">
@@ -274,11 +265,24 @@
                                 </span>
                             </a>
                         </li>
-                        <!-- =============================================== 
-                        <li><a href="#"><i class="fa fa-circle-o text-red"></i><span>Important</span></a></li>
-                        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i><span>Warning</span></a></li>
-                        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i><span>Information</span></a></li>
-                        -->
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-dashboard"></i><span>Configuración</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="../../Marca.aspx"><i class="fa fa-circle-o"></i>Marca</a></li>
+                                <li><a href="../../Talla.aspx"><i class="fa fa-circle-o"></i>Talla</a></li>
+                                <li><a href="../../TipoDocumento.aspx"><i class="fa fa-circle-o"></i>Tipo de documento</a></li>
+                            </ul>
+                        </li>
+                         <!--=============================================== 
+                        <li><a href="#"><i class="fa fa-circle-o text-red"></i><span>Talla</span></a></li>
+                        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i><span>Marca</span></a></li>
+                        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i><span>Tipo de documento</span></a></li>
+                     -->  
                     </ul>
                 </section>
                 <!-- /.sidebar -->

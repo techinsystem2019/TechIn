@@ -40,5 +40,10 @@ namespace CapaNegocio
         {
             objetoCD.InsertarBodegas(bodega, dirbodega, telbodega, Convert.ToInt32(estadobodega));
         }
+
+        public void InsertarProveedores(string proveedor, string estadoproveedor)
+        {
+            objetoCD.InsertarProveedores(proveedor, Convert.ToInt32(estadoproveedor));
+        }
     }
 }

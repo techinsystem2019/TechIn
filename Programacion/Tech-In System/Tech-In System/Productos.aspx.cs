@@ -64,5 +64,10 @@ namespace Tech_In_System
             gvwProducto.PageIndex = e.NewPageIndex;
             MostrarProductos();
         }
+
+        protected void gvwProducto_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
