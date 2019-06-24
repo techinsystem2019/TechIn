@@ -24,7 +24,7 @@
                                              <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                                             <Columns>
                                                 <asp:CommandField ShowEditButton="True" />
-                                                <asp:BoundField DataField="IdTalla" HeaderText="IdTalla" InsertVisible="False" ReadOnly="True" SortExpression="IdTalla" Visible="False" />
+                                                <asp:BoundField DataField="IdTalla" HeaderText="IdTalla" InsertVisible="False" ReadOnly="True" SortExpression="IdTalla" />
                                                 <asp:BoundField DataField="Talla" HeaderText="Talla" SortExpression="Talla" />
                                                 <asp:BoundField DataField="EstadoTalla" HeaderText="EstadoTalla" SortExpression="EstadoTalla" />
                                             </Columns>
