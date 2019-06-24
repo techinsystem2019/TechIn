@@ -1,11 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="Productos.aspx.cs" Inherits="Tech_In_System.Productos" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="Categorias.aspx.cs" Inherits="Tech_In_System.Categorias" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <title>Cabecera productos</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <!-- Productos -->
+    <!-- bodega -->
+
     <div class="right_col" role="main">
         <div>
             <div class="row">
@@ -15,23 +14,18 @@
                             <div class="row">
                                 <div class="page-title">
                                     <div class="text-center">
-                                        <h3>Listado de productos</h3>
+                                        <h3>Listado de Categorias</h3>
                                     </div>
                                 </div>
                                 <br />
                                 <div class="form-group">
                                     <div class="col-md-8 col-sm-8 col-xs-12 col-md-offset-2 col-sm-offset-2">
-                                        <asp:GridView ID="gvwProducto" runat="server" class="table" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="IdProducto" DataSourceID="SqlDataSource1">
-                                            <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+                                        <asp:GridView ID="gvw_categoria" runat="server" class="table" AutoGenerateColumns="False" DataKeyNames="IdCategoria" DataSourceID="SqlDataSource1" AllowPaging="True" AllowSorting="True">
                                             <Columns>
                                                 <asp:CommandField ShowEditButton="True" />
-                                                <asp:BoundField DataField="IdProducto" HeaderText="IdProducto" InsertVisible="False" ReadOnly="True" SortExpression="IdProducto" Visible="False" />
+                                                <asp:BoundField DataField="IdCategoria" HeaderText="IdCategoria" InsertVisible="False" ReadOnly="True" SortExpression="IdCategoria" />
                                                 <asp:BoundField DataField="Categoria" HeaderText="Categoria" SortExpression="Categoria" />
-                                                <asp:BoundField DataField="Bodega" HeaderText="Bodega" SortExpression="Bodega" />
-                                                <asp:BoundField DataField="Proveedor" HeaderText="Proveedor" SortExpression="Proveedor" />
-                                                <asp:BoundField DataField="Producto" HeaderText="Producto" SortExpression="Producto" />
-                                                <asp:BoundField DataField="EstadoProducto" HeaderText="EstadoProducto" SortExpression="EstadoProducto" />
-                                                
+                                                <asp:BoundField DataField="EstadoCategoria" HeaderText="EstadoCategoria" SortExpression="EstadoCategoria" />
                                             </Columns>
                                             <EditRowStyle BackColor="#999999" BorderColor="#000"/>
                                             <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
@@ -43,22 +37,19 @@
                                             <SortedAscendingHeaderStyle BackColor="#506C8C" />
                                             <SortedDescendingCellStyle BackColor="#FFFDF8" />
                                             <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
-                                        </asp:GridView>
-                                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:TechInConnectionString %>" SelectCommand="MostrarProductos" SelectCommandType="StoredProcedure" UpdateCommand="EditarProductos" UpdateCommandType="StoredProcedure">
+                                        </asp:GridView> 
+                                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:TechInConnectionString %>" SelectCommand="MostrarCategorias" SelectCommandType="StoredProcedure" UpdateCommand="EditarCategorias" UpdateCommandType="StoredProcedure">
                                             <UpdateParameters>
                                                 <asp:Parameter Name="categoria" Type="String" />
-                                                <asp:Parameter Name="bodega" Type="String" />
-                                                <asp:Parameter Name="proveedor" Type="String" />
-                                                <asp:Parameter Name="producto" Type="String" />
-                                                <asp:Parameter Name="estadoproducto" Type="Int32" />
-                                                <asp:Parameter Name="idproducto" Type="Int32" />
+                                                <asp:Parameter Name="estadocategoria" Type="Int32" />
+                                                <asp:Parameter Name="idcategoria" Type="Int32" />
                                             </UpdateParameters>
                                         </asp:SqlDataSource>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-md-8 col-sm-8 col-xs-12 col-md-offset-2 col-sm-offset-2">
-                                        <asp:Button ID="nuevo_prod" runat="server" Text="Nuevo Producto" class="btn btn-primary" OnClick="nuevo_prod_Click" />
+                                        <asp:button id="nuevo_cate" runat="server" text="Nueva Categoria" class="btn btn-primary" OnClick="nuevo_cate_Click" />
                                     </div>
                                 </div>
                             </div>
@@ -68,6 +59,6 @@
             </div>
         </div>
     </div>
-   <!-- Fin Productos -->
+    <!-- fin bodega-->
 
 </asp:Content>

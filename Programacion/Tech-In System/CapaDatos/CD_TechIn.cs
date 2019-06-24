@@ -58,7 +58,7 @@ namespace CapaDatos
             return tabla;*/
         }
 
-        public void InsertarProductos(int idcategoria, string producto, int estadoproducto)
+        public void InsertarProductos(int idcategoria,int idbodega, int idproveedor, string producto, int estadoproducto)
         {
             comando.Connection = conexion.AbrirConexion();
             //comando.CommandText = "insert into Producto(Nombre,Apellido,Correo, Cedula) values('"+nombre+ "','" + apellido + "','" + correo + "','" + cedula + "')";
@@ -66,24 +66,10 @@ namespace CapaDatos
             //comando.CommandType = CommandType.Text;
             comando.CommandType = CommandType.StoredProcedure;
             comando.Parameters.AddWithValue("@idcategoria", idcategoria);
+            comando.Parameters.AddWithValue("@idbodega", idbodega);
+            comando.Parameters.AddWithValue("@idproveedor", idproveedor);
             comando.Parameters.AddWithValue("@producto", producto);
             comando.Parameters.AddWithValue("@estadoproducto", estadoproducto);
-            comando.ExecuteNonQuery();
-            comando.Parameters.Clear();
-
-        }
-
-        public void EditarProductos(string categoria, string producto, int estadoproducto, int idproducto)
-        {
-            comando.Connection = conexion.AbrirConexion();
-            //comando.CommandText = "insert into Producto(Nombre,Apellido,Correo, Cedula) values('"+nombre+ "','" + apellido + "','" + correo + "','" + cedula + "')";
-            comando.CommandText = "EditarProductos";
-            //comando.CommandType = CommandType.Text;
-            comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@categoria", categoria);
-            comando.Parameters.AddWithValue("@producto", producto);
-            comando.Parameters.AddWithValue("@estadoproducto", estadoproducto);
-            comando.Parameters.AddWithValue("@idproducto", idproducto);
             comando.ExecuteNonQuery();
             comando.Parameters.Clear();
 
@@ -116,6 +102,43 @@ namespace CapaDatos
             comando.Parameters.Clear();
 
         }
+
+        public void InsertarCategorias(string categoria, int estadocategoria)
+        {
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "InsertarCategorias";
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@categoria", categoria);
+            comando.Parameters.AddWithValue("@estadocategoria", estadocategoria);
+            comando.ExecuteNonQuery();
+            comando.Parameters.Clear();
+
+        }
+
+        public void InsertarMarcas(string marca, int estadomarca)
+        {
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "InsertarMarcas";
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@marca", marca);
+            comando.Parameters.AddWithValue("@estadomarca", estadomarca);
+            comando.ExecuteNonQuery();
+            comando.Parameters.Clear();
+
+        }
+
+        public void Login(string usuario, string contrasena)
+        {
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "Login";
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@usuario", usuario);
+            comando.Parameters.AddWithValue("@contrasena", contrasena);
+            comando.ExecuteNonQuery();
+            comando.Parameters.Clear();
+
+        }
+
 
         public void InsertarTallas(string talla, int estadotalla)
         {

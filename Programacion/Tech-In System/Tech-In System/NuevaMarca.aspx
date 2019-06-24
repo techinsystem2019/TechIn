@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="NuevoProveedor.aspx.cs" Inherits="Tech_In_System.NuevoProveedor" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="NuevaMarca.aspx.cs" Inherits="Tech_In_System.NuevaMarca" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -8,7 +8,7 @@
         <div>
             <div class="page-title">
                 <div class="text-center">
-                    <h3>Nuevo Proveedor</h3>
+                    <h3>Nueva Marca</h3>
                 </div>
             </div>
             <div class="clearfix"></div>
@@ -19,14 +19,14 @@
                             <br />
                             <div class="form-group">
                                 <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3 col-sm-offset-3">
-                                    <asp:TextBox ID="txtProveedor" runat="server" placeholder="NOMBRE DEL PROVEEDOR" required="required" class="form-control col-md-7 col-xs-12"></asp:TextBox>
+                                    <asp:TextBox ID="txtMarca" runat="server" placeholder="NOMBRE DE LA MARCA" required="required" class="form-control col-md-7 col-xs-12"></asp:TextBox>
                                 </div>
                             </div>
                             <div class="ln_solid"></div>
                             <div class="form-group">
                                 <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3 col-sm-offset-3">
-                                    &nbsp;<asp:Button ID="volver_prod" runat="server" Text="Volver" class="btn btn-danger" OnClick="volver_prod_Click" />
-                                    <asp:Button ID="guardar_bod" runat="server" Text="Guardar" class="btn btn-success" OnClick="guardar_prov_Click" />
+                                    &nbsp;<asp:Button ID="volver_prod" runat="server" Text="Volver" class="btn btn-danger" />
+                                    <asp:Button ID="guardar_marca" runat="server" Text="Guardar" class="btn btn-success" OnClick="guardar_marca_Click"/>
                                 </div>
                             </div>
                         </div>

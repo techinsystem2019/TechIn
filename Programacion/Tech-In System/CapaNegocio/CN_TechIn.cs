@@ -26,15 +26,11 @@ namespace CapaNegocio
             return tabla;
         }
 
-        public void InsertarProductos(string idcategoria, string producto, string estadoproducto)
+        public void InsertarProductos(string idcategoria, string idbodega, string idproveedor, string producto, string estadoproducto)
         {
-            objetoCD.InsertarProductos(Convert.ToInt32(idcategoria),producto, Convert.ToInt32(estadoproducto));
+            objetoCD.InsertarProductos(Convert.ToInt32(idcategoria), Convert.ToInt32(idbodega), Convert.ToInt32(idproveedor), producto, Convert.ToInt32(estadoproducto));
         }
 
-        public void EditarProductos(string categoria, string producto, string estadoproducto, string idproducto)
-        {
-            objetoCD.EditarProductos(categoria, producto, Convert.ToInt32(estadoproducto), Convert.ToInt32(idproducto));
-        }
 
         public void InsertarBodegas(string bodega, string dirbodega, string telbodega, string estadobodega)
         {
@@ -44,6 +40,21 @@ namespace CapaNegocio
         public void InsertarProveedores(string proveedor, string estadoproveedor)
         {
             objetoCD.InsertarProveedores(proveedor, Convert.ToInt32(estadoproveedor));
+        }
+
+        public void InsertarCategorias(string categoria, string estadocategoria)
+        {
+            objetoCD.InsertarCategorias(categoria, Convert.ToInt32(estadocategoria));
+        }
+
+        public void InsertarMarcas(string marca, string estadomarca)
+        {
+            objetoCD.InsertarMarcas(marca, Convert.ToInt32(estadomarca));
+        }
+
+        public void Login(string usuario, string contrasena)
+        {
+            objetoCD.Login(usuario, contrasena);
         }
 
         public void InsertarTallas(string talla, string estadotalla)

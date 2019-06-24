@@ -6227,6 +6227,7 @@
     <Content Include="build\js\PushMenu.js" />
     <Content Include="build\js\TodoList.js" />
     <Content Include="build\js\Tree.js" />
+    <Content Include="Categorias.aspx" />
     <Content Include="dist\css\AdminLTE.css" />
     <Content Include="dist\css\AdminLTE.min.css" />
     <Content Include="dist\css\alt\AdminLTE-bootstrap-social.css" />
@@ -6298,7 +6299,11 @@
     <Content Include="index.html" />
     <Content Include="index2.html" />
     <Content Include="Inicio.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Marcas.aspx" />
     <Content Include="NuevaBodega.aspx" />
+    <Content Include="NuevaCategoria.aspx" />
+    <Content Include="NuevaMarca.aspx" />
     <Content Include="NuevaTalla.aspx" />
     <Content Include="NuevoProducto.aspx" />
     <Content Include="NuevoProveedor.aspx" />
@@ -6481,8 +6486,6 @@
     <Content Include="Productos.aspx" />
     <Content Include="Proveedores.aspx" />
     <Content Include="starter.html" />
-    <Content Include="Talla.aspx" />
-    <Content Include="Usuarios.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -6492,6 +6495,13 @@
     </Compile>
     <Compile Include="Bodegas.aspx.designer.cs">
       <DependentUpon>Bodegas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Categorias.aspx.cs">
+      <DependentUpon>Categorias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Categorias.aspx.designer.cs">
+      <DependentUpon>Categorias.aspx</DependentUpon>
     </Compile>
     <Compile Include="Home.Master.cs">
       <DependentUpon>Home.Master</DependentUpon>
@@ -6507,12 +6517,40 @@
     <Compile Include="Inicio.aspx.designer.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Marcas.aspx.cs">
+      <DependentUpon>Marcas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Marcas.aspx.designer.cs">
+      <DependentUpon>Marcas.aspx</DependentUpon>
+    </Compile>
     <Compile Include="NuevaBodega.aspx.cs">
       <DependentUpon>NuevaBodega.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="NuevaBodega.aspx.designer.cs">
       <DependentUpon>NuevaBodega.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NuevaCategoria.aspx.cs">
+      <DependentUpon>NuevaCategoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NuevaCategoria.aspx.designer.cs">
+      <DependentUpon>NuevaCategoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NuevaMarca.aspx.cs">
+      <DependentUpon>NuevaMarca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NuevaMarca.aspx.designer.cs">
+      <DependentUpon>NuevaMarca.aspx</DependentUpon>
     </Compile>
     <Compile Include="NuevaTalla.aspx.cs">
       <DependentUpon>NuevaTalla.aspx</DependentUpon>
@@ -6549,20 +6587,6 @@
     </Compile>
     <Compile Include="Proveedores.aspx.designer.cs">
       <DependentUpon>Proveedores.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Talla.aspx.cs">
-      <DependentUpon>Talla.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Talla.aspx.designer.cs">
-      <DependentUpon>Talla.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Usuarios.aspx.cs">
-      <DependentUpon>Usuarios.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Usuarios.aspx.designer.cs">
-      <DependentUpon>Usuarios.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

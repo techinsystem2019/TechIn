@@ -30,6 +30,20 @@
                                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:TechInConnectionString %>" SelectCommand="MostrarCategorias" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
                                 </div>
                             </div>
+                            <div class="form-group">
+                                <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3 col-sm-offset-3">
+                                    <asp:Label CssClass="font-weight-bold" ID="lbl_bodega" runat="server" Text="Label">Bodega</asp:Label>
+                                    <asp:DropDownList ID="dlBodega" runat="server" CssClass="form-control form-control-lg" DataSourceID="Bodegas" DataTextField="Bodega" DataValueField="IdBodega"></asp:DropDownList>
+                                    <asp:SqlDataSource ID="Bodegas" runat="server" ConnectionString="<%$ ConnectionStrings:TechInConnectionString %>" SelectCommand="MostrarBodegas" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3 col-sm-offset-3">
+                                    <asp:Label CssClass="font-weight-bold" ID="lbl_proveedor" runat="server" Text="Label">Proveedor</asp:Label>
+                                    <asp:DropDownList ID="dlProveedor" runat="server" CssClass="form-control form-control-lg" DataSourceID="SqlDataSource2" DataTextField="Proveedor" DataValueField="IdProveedor"></asp:DropDownList>
+                                    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:TechInConnectionString %>" SelectCommand="MostrarProveedores" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
+                                </div>
+                            </div>
                             <div class="ln_solid"></div>
                             <div class="form-group">
                                 <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3 col-sm-offset-3">

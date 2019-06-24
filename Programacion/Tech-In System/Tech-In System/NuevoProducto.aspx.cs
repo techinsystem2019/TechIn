@@ -20,7 +20,7 @@ namespace Tech_In_System
             try
             {
                 CN_TechIn objetoCN2 = new CN_TechIn();
-                objetoCN2.InsertarProductos(dlCategoria.Text, txtProducto.Text, "1");
+                objetoCN2.InsertarProductos(dlCategoria.Text,dlBodega.Text, dlProveedor.Text, txtProducto.Text, "1");
                 Lbl_Categoria.Text = "Se insertó correctamente";
                 LimpiarProductos();
                 Response.Redirect("Productos.aspx");

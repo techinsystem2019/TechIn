@@ -30,6 +30,7 @@
     <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
     <asp:ContentPlaceHolder ID="head" runat="server">
+        
     </asp:ContentPlaceHolder>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -253,6 +254,11 @@
                             </a>
                         </li>
                         <li>
+                            <a href="../../Categorias.aspx">
+                                <i class="fa fa-cart-plus"></i><span>Categorías</span>
+                            </a>
+                        </li>
+                        <li>
                             <a href="../../Proveedores.aspx">
                                 <i class="fa fa-cart-plus"></i><span>Proveedores</span>
                             </a>
@@ -273,8 +279,8 @@
                                 </span>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="../../Marca.aspx"><i class="fa fa-circle-o"></i>Marca</a></li>
-                                <li><a href="../../Talla.aspx"><i class="fa fa-circle-o"></i>Talla</a></li>
+                                <li><a href="../../Marcas.aspx"><i class="fa fa-circle-o"></i>Marca</a></li>
+                                <li><a href="../../Tallas.aspx"><i class="fa fa-circle-o"></i>Talla</a></li>
                                 <li><a href="../../TipoDocumento.aspx"><i class="fa fa-circle-o"></i>Tipo de documento</a></li>
                             </ul>
                         </li>
@@ -306,6 +312,7 @@
                 <section class="content">
 
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                       
                     </asp:ContentPlaceHolder>
 
                 </section>

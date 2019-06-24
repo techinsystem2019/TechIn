@@ -10,3 +10,9 @@ C:\Users\Sebastian\Documents\GitHub\TechIn\Programacion\Tech-In System\CapaDatos
 C:\Users\Sebastian\Documents\GitHub\TechIn\Programacion\Tech-In System\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
 C:\Users\Sebastian\Documents\GitHub\TechIn\Programacion\Tech-In System\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\Sebastian\Documents\GitHub\TechIn\Programacion\Tech-In System\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\Milena\Documents\GitHub\TechIn\Programacion\Tech-In System\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Milena\Documents\GitHub\TechIn\Programacion\Tech-In System\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Milena\Documents\GitHub\TechIn\Programacion\Tech-In System\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+C:\Users\Milena\Documents\GitHub\TechIn\Programacion\Tech-In System\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\Milena\Documents\GitHub\TechIn\Programacion\Tech-In System\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Milena\Documents\GitHub\TechIn\Programacion\Tech-In System\CapaDatos\obj\Debug\CapaDatos.pdb
